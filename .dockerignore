@@ -1,0 +1,35 @@
+# Ignorar carpetas de desarrollo y cachés
+node_modules
+vendor
+storage/*.key
+storage/*.log
+storage/framework/*
+!storage/framework/cache
+!storage/framework/sessions
+!storage/framework/views
+
+# Ignorar archivos de entorno y config personales
+.env
+.env.*
+!.env.example
+
+# Ignorar symlinks potencialmente rotos
+public/storage
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de control de versiones
+.git
+.gitignore
+.gitattributes
+
+# Archivos de editores
+.idea
+.vscode
+*.swp
+*.swo
+
+# Archivos de build de Docker anteriores
+docker-compose.override.yml
